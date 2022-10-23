@@ -16,5 +16,18 @@
 Create programs for your Arduino devices freely and comfortable with visual programming interface!
 
 ## Screenshots
-
-![image](https://user-images.githubusercontent.com/52314985/197408876-46ff4852-1801-4c4d-884d-8b2e48f186c6.png)
+<table>
+    <tbody>
+        <tr>
+            <td colspan=4>
+              <img src="https://user-images.githubusercontent.com/52314985/197408876-46ff4852-1801-4c4d-884d-8b2e48f186c6.png" alt="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Screenshot 2</td>
+            <td>Screenshot 3</td>
+            <td>Screenshot 4</td>
+            <td>Screenshot 5</td>
+        </tr>
+    </tbody>
+</table>
