@@ -1,21 +1,27 @@
 import styles from "./App.module.css";
-import { IconButton } from "./components/buttons/IconButton";
-import { Button } from "./components/buttons/Button";
-import { Avatar } from "./components/profile/Avatar";
-import { Header } from "./components/header/Header";
+import { Icon } from "./components/Icon";
+import { IconButton } from "./components/IconButton/IconButton";
 
 function App() {
   return (
     <div className={styles.App}>
-      <Header />
-
-      <div className={styles.Container}>
-        <div>
-          <Button icon="home" label="Главная" active />
-          <Button icon="history" label="Недавние" />
-          <Button icon="trash" label="Корзина" />
+      <header className={styles.Header}>
+        <div className={styles.Navigation}>
+          <div className={styles.Logo}>
+            <Icon name="logo" />
+          </div>
+          <IconButton icon="file" />
+          <IconButton icon="open" />
+          <IconButton icon="save" />
         </div>
-      </div>
+        <div className={styles.Title}>
+          <h2 className={styles.ProjectName}>sketch_feb28.iob</h2>
+        </div>
+        <div className={styles.Actions}>
+          <IconButton icon="share" />
+          <IconButton icon="settings" />
+        </div>
+      </header>
     </div>
   );
 }

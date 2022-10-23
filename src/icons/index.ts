@@ -1,25 +1,17 @@
-import apps from "./apps.svg";
-import home from "./home.svg";
-import history from "./history.svg";
+import logo from "./logo.svg";
 import file from "./file.svg";
-import trash from "./trash.svg";
-import user from "./user.svg";
+import open from "./folder.svg";
+import save from "./save.svg";
 import settings from "./settings.svg";
-import notification from "./notification.svg";
-import close from "./close.svg";
-import chevronRight from "./chevron-right.svg";
+import share from "./share.svg";
 
 export const icons = {
-  apps,
-  history,
+  logo,
   file,
-  trash,
-  home,
-  user,
+  open,
+  save,
   settings,
-  notification,
-  close,
-  chevronRight,
+  share,
 };
 
 export type TIcon = keyof typeof icons;

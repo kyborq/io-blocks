@@ -1,0 +1,15 @@
+.IconButton {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  transition: 150ms;
+}
+
+.IconButton:hover {
+  background-color: #e2e2e2;
+  transition: 150ms;
+}
