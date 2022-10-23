@@ -1,0 +1,57 @@
+.Line {
+  display: flex;
+  border-radius: 24px;
+  transition: 150ms;
+  align-items: center;
+}
+
+.Container:hover .Comment {
+  color: #c7c7c7;
+  transition: 150ms;
+}
+
+.Container {
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.Container:hover {
+  background-color: #e2e2e2;
+  transition: 150ms;
+  border-radius: 24px;
+}
+
+.Action {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.Label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.Comment {
+  margin-left: 24px;
+  font-weight: bold;
+  color: #f2f2f2;
+  transition: 150ms;
+}
+
+.Footer {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+  padding-left: 32px;
+  margin-bottom: 16px;
+}
+
+.FooterActions {
+  margin-left: 8px;
+  cursor: pointer;
+}

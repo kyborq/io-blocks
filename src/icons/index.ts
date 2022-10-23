@@ -4,6 +4,8 @@ import open from "./folder.svg";
 import save from "./save.svg";
 import settings from "./settings.svg";
 import share from "./share.svg";
+import plus from "./plus.svg";
+import sub from "./sub.svg";
 
 export const icons = {
   logo,
@@ -12,6 +14,8 @@ export const icons = {
   save,
   settings,
   share,
+  plus,
+  sub,
 };
 
 export type TIcon = keyof typeof icons;

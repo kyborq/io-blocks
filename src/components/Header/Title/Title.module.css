@@ -1,0 +1,22 @@
+.Title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectName {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  padding: 6px 16px;
+  transition: 150ms;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.ProjectName:hover {
+  background-color: #e2e2e2;
+  transition: 150ms;
+}
