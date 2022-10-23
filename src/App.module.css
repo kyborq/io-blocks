@@ -1,0 +1,10 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.Container {
+  padding: 0 32px;
+}
