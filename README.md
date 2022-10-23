@@ -16,6 +16,7 @@
 Create programs for your Arduino devices freely and comfortable with visual programming interface!
 
 ## Screenshots
+
 <table>
     <tbody>
         <tr>
@@ -31,3 +32,28 @@ Create programs for your Arduino devices freely and comfortable with visual prog
         </tr>
     </tbody>
 </table>
+
+## Development
+
+0. Software
+
+Check your installed NodeJS
+
+1. Clone repository
+
+```
+git clone https://github.com/kyborq/io-blocks.git
+cd io-blocks
+``` 
+
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Run and enjoy
+
+```
+npm run
+```
