@@ -6,11 +6,12 @@ import styles from "./IconButton.module.css";
 
 type Props = {
   icon: TIcon;
+  onClick?: () => void;
 };
 
-export const IconButton: React.FC<Props> = ({ icon }) => {
+export const IconButton: React.FC<Props> = ({ icon, onClick }) => {
   return (
-    <button className={styles.IconButton}>
+    <button className={styles.IconButton} onClick={onClick}>
       <Icon name={icon} />
     </button>
   );

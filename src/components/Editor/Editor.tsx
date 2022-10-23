@@ -1,22 +1,17 @@
-import { Button } from "./Button/Button";
-import styles from "./Editor.module.css";
 import { Line } from "./Line/Line";
+
+import styles from "./Editor.module.css";
 
 export const Editor = () => {
   return (
     <div className={styles.Editor}>
-      <Button icon="plus" label="Переменная" />
-      <Line
-        icon="settings"
-        label="При старте"
-        comment="Выполнение кода один раз"
-      />
-      <Line
-        icon="settings"
-        label="Всегда"
-        comment="Выполнение кода бесконечно"
-      />
-      <Button icon="plus" label="Функция" />
+      <Line icon="settings" label="Setup" canHaveChildren>
+        <Line icon="settings" label="Always" canHaveChildren>
+          <Line icon="settings" label="Always" />
+          <Line icon="settings" label="Always" canHaveChildren />
+        </Line>
+      </Line>
+      <Line icon="settings" label="Always" canHaveChildren />
     </div>
   );
 };

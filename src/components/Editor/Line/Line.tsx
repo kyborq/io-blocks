@@ -1,30 +1,38 @@
 import { TIcon } from "../../../icons";
-import { Icon } from "../../Icon";
 import { Button } from "../Button/Button";
+import { Element } from "./Element/Element";
+import { IconButton } from "../../IconButton/IconButton";
+
 import styles from "./Line.module.css";
 
 type Props = {
   icon: TIcon;
   label: string;
-  comment?: string;
+  children?: React.ReactNode;
+  canHaveChildren?: boolean;
 };
 
-export const Line: React.FC<Props> = ({ icon, label, comment }) => {
+export const Line: React.FC<Props> = ({
+  icon,
+  label,
+  children,
+  canHaveChildren,
+}) => {
   return (
     <div className={styles.Container}>
       <div className={styles.Line}>
-        <div className={styles.Action}>
-          <Icon name={icon} />
-          <span className={styles.Label}>{label}</span>
-        </div>
-        {!!comment && <span className={styles.Comment}>{comment}</span>}
-      </div>
-      <div className={styles.Footer}>
-        <Icon name="sub" />
-        <div className={styles.FooterActions}>
-          <Button icon="plus" label="Добавить" />
+        <Element icon={icon} label={label} />
+        <div className={styles.Actions}>
+          <IconButton icon="edit" />
+          <IconButton icon="trash" />
         </div>
       </div>
+      {canHaveChildren && (
+        <div className={styles.Children}>
+          {children}
+          <Button icon="plus" label="Command" />
+        </div>
+      )}
     </div>
   );
 };

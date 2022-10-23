@@ -1,0 +1,27 @@
+.Container {
+  background-color: #fff;
+  padding: 2px 2px;
+  border-radius: 32px;
+  user-select: none;
+}
+
+.Element {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 150ms;
+  margin: 4px;
+  padding: 7px 14px;
+  border-radius: 32px;
+}
+
+.Element:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: 150ms;
+}
+
+.Label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;
+}
