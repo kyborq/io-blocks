@@ -9,8 +9,8 @@
   <img src="https://img.shields.io/github/issues/kyborq/io-blocks" alt="" />
 </div>
 
-# IO Blocks
+![Screen](https://user-images.githubusercontent.com/52314985/197397280-a3df48f2-b011-432e-a1b8-86a27a346acf.png)
 
-![TV](https://user-images.githubusercontent.com/52314985/197397243-44c57130-cde0-4ed8-8cbb-77511ad7290b.png)
+# IO Blocks
 
 Create programs for your Arduino devices freely and comfortable with visual programming interface!
