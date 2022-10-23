@@ -4,12 +4,14 @@ import { Element } from "./Element/Element";
 import { IconButton } from "../../IconButton/IconButton";
 
 import styles from "./Line.module.css";
+import { classnames } from "../../../utils/classnames";
 
 type Props = {
   icon: TIcon;
   label: string;
   children?: React.ReactNode;
   canHaveChildren?: boolean;
+  selected?: boolean;
 };
 
 export const Line: React.FC<Props> = ({
@@ -17,13 +19,13 @@ export const Line: React.FC<Props> = ({
   label,
   children,
   canHaveChildren,
+  selected,
 }) => {
   return (
-    <div className={styles.Container}>
+    <div className={classnames(styles.Container, selected && styles.Selected)}>
       <div className={styles.Line}>
         <Element icon={icon} label={label} />
         <div className={styles.Actions}>
-          <IconButton icon="edit" />
           <IconButton icon="trash" />
         </div>
       </div>

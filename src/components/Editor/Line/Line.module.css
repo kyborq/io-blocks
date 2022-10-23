@@ -2,21 +2,22 @@
   display: flex;
   margin-bottom: 8px;
   flex-direction: column;
-  /* align-items: baseline; */
+  border-radius: 24px;
 }
 
 .Children {
-  padding-left: 16px;
-  border-left: 2px solid #e2e2e2;
+  padding-left: 8px;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.025);
   margin-left: 24px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-bottom-left-radius: 24px;
+  border-bottom-left-radius: 32px;
   transition: 150ms;
 }
 
 .Children:hover {
-  border-color: #b631f3;
+  border-color: rgba(0, 0, 0, 0.075);
   transition: 150ms;
 }
 
@@ -24,8 +25,16 @@
   display: flex;
 }
 
+.Container.Selected {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.Container.Selected .Children {
+  border-color: rgba(0, 0, 0, 0.025);
+}
+
 .Actions {
-  margin-left: 8px;
+  margin-left: 16px;
   display: none;
 }
 
