@@ -3,3 +3,8 @@
   padding-bottom: 32px;
   overflow: auto;
 }
+
+.Events {
+  display: flex;
+  flex-wrap: wrap;
+}

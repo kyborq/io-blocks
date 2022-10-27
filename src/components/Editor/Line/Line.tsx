@@ -12,6 +12,7 @@ type Props = {
   children?: React.ReactNode;
   canHaveChildren?: boolean;
   selected?: boolean;
+  onAddEvent?: () => void;
 };
 
 export const Line: React.FC<Props> = ({
@@ -20,6 +21,7 @@ export const Line: React.FC<Props> = ({
   children,
   canHaveChildren,
   selected,
+  onAddEvent,
 }) => {
   return (
     <div className={classnames(styles.Container, selected && styles.Selected)}>
@@ -32,7 +34,7 @@ export const Line: React.FC<Props> = ({
       {canHaveChildren && (
         <div className={styles.Children}>
           {children}
-          <Button icon="plus" label="Command" />
+          <Button icon="plus" label="Command" onClick={onAddEvent} />
         </div>
       )}
     </div>
